@@ -39,6 +39,7 @@ Once it runs and finishes, we can reuse the terminal.
 
 You'll need to fix an error in the program to get it to run.
 Once it runs successfully, will it terminate on its own? How do you know? 
+    No it will not terminate on its own. I know because the terminal did not move to a new line I could input a command.
 As long as the process is running, we cannot use this terminal for other commands. 
 
 ## Version 1 - Open a New Terminal / Emit More Messages
@@ -82,9 +83,9 @@ Each of the version 2 programs include an error as well.
 1. Everything the function needs comes in through the arguments.
 1. A function may - or may not - return a value. 
 1. When we open a connection, we should close the connection. 
-1. Which of the 4 files will always close() the connection?
-1. Search GitHub for if __name__ == "__main__":
-1. How many hits did you get? 
+1. Which of the 4 files will always close() the connection? - both emit message files
+1. Search GitHub for if __name__ == "__main__": 
+1. How many hits did you get? 18 million hits in all of github
 1. Learn and understand this common Python idiom.
 
 ## Reference
@@ -95,3 +96,14 @@ Each of the version 2 programs include an error as well.
 ## Multiple Terminals
 
 ![Mac Example](screenshot.png)
+
+
+## Mutliple Terminals Emitting and Listening
+
+![Emitting Ternminal](Emitting_Terminal.png)
+
+![Listening Ternminal](Listening_Terminal.png)
+
+## Additional Info
+
+- I had some issues when updating my conda environment and getting RabbitMQ and pika to work. What I found out is after updating it is always a good idea to restart your terminal, environment, or even device if issues persists. I kept receiving errors when trying to run scripts, but after restarting Anaconda prompt (which also prompted an update) the issues were resolved.
